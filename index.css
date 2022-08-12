@@ -927,6 +927,7 @@ img {
 .deal{
     display: flex;
     justify-content: center;
+    flex-wrap:wrap;
     align-items: center;
     margin: 2% 0;
 }
