@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+    integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Eshop-Fashion</title>
+</head>
+<style>
+    .fs1,.fs2,.fs3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 3% 0;
+}
+.itm-crd{
+    min-width: 254px;
+    height: 305px;
+    /* line-height: 310px; */
+    text-align: center;
+    /* background-color: #ddd; */
+    border:.1rem solid rgba(0,0,0,.3);
+    /* margin-right: 2px; */
+    display: flex;
+    /* flex-direction: row; */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 0;
+    margin: 0 15px;
+    justify-items: center;
+    /* margin-bottom: 14px; */
+}
+.itm-crd img{
+    width:250px;
+    height: 160px;
+    /* background-color: #c0bfbf; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+</style>
+<body>
+    <header class="header">
+        <div class="user">
+            <i class="fa-solid fa-circle-user"></i>
+            <!-- <span>Guest</span> -->
+        </div>
+        <div class="login">
+            <button class="login-btn" id="login-btn"> Login</button>
+            
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <div class="close" >
+                    <img src="img/close.png" alt="close" >
+                </div>
+                <div class="r-p-c">
+                    <h1>Login</h1>
+                    <p>Get access to your <br> orders, wishlist and <br>Recomendations</p>
+                    <div class="vectr">
+                        <img src="img/pic.png" alt="">
+                    </div>
+                </div>
+                <div class="l-p-c">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <form>
+                        <div class="user-box">
+                          <input type="text" name="" required="">
+                          
+                          <label>Email/Mobile </label>
+                        </div>
+                        <div class="user-box">
+                          <input type="password" name="" required="">
+                          <label>Password</label>
+                        </div>
+                        <input class="sbmt" type="submit" value="Login">
+                        <div class="sA">
+                            <div class="or">OR</div>
+                            <button class="otp">Request OTP</button>
+                        </div>
+                       
+
+                      </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbars background h-nav-resp">
+            <div class="links ">
+                <ul class="navList v-class-resp">
+                    <li class="navlink active"><a  href="index.html" 
+                            rel="noopener noreferrer">Home</a> </li>
+                    <li class="navlink"><a href="#deal"> Best Deals</a></li>
+                    <li class="navlink"><a href="about.html" target="_blank" rel="noopener noreferrer">About</a> </li>
+                    <li class="navlink"><a href="feedback.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                    </li>
+                    <!-- <li class="navlink"><a href="http://" target="_blank" rel="noopener noreferrer">Login/SignUp</a> </li> -->
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="logo">
+            <img src="img/main_logo.png" alt="">
+            <h1>Eshop</h1>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="srch" placeholder="search for products, brands and more">
+            <div class="search-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+    </header>
+    <div class="menu-cont">
+        <div class="menu-items">
+            <img src="img/m1.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="#deal"> Top Offers</a></p>
+
+            </div>
+        </div>
+       
+        <div class="menu-items">
+            <img src="img/m3.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="mobiles.html"> Mobiles</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m4.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href=""> Fashion</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m5.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="Electronics.html"> Electronics</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m6.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="home.html"> Home</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m7.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="appliences.html"> appliences</a></p>
+            </div>
+        </div>
+        
+    </div>
+
+    <section class="fs1">
+        <div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs1.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Lining Shirt</strong>
+                    <div class="sub-line">
+                        <p class=" discount">1,031 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs2.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Sunglasses</strong>
+                    <div class="sub-line">
+                        <p class=" discount">745 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs3.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Trakpants</strong>
+                    <div class="sub-line">
+                        <p class=" discount">1,340 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs4.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Black Formal Shoes</strong>
+                    <div class="sub-line">
+                        <p class=" discount">1,545 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    
+    <section class="fs2">
+        <div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs5.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Saree</strong>
+                    <div class="sub-line">
+                        <p class=" discount">935 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs6.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Black Heels</strong>
+                    <div class="sub-line">
+                        <p class=" discount">655 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs7.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Clossal Kit</strong>
+                    <div class="sub-line">
+                        <p class=" discount">678 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs8.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Girl's Top </strong>
+                    <div class="sub-line">
+                        <p class=" discount">789 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section class="fs3">
+        <div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs9.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Kids T-shirt</strong>
+                    <div class="sub-line">
+                        <p class=" discount">577 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs10.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Boys Shorts </strong>
+                    <div class="sub-line">
+                        <p class=" discount">940 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs11.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Remote controlled Monster Truck</strong>
+                    <div class="sub-line">
+                        <p class=" discount">1,349 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div><div class="itm-crd">
+            <div class="item">
+                <div class="image">
+                    <img src="img/fs12.png" alt="">
+                </div>
+                <div class="lines">
+                    <strong class="descrip">Kids Sandal</strong>
+                    <div class="sub-line">
+                        <p class=" discount">999 Rs.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                    <div class="item-btns">
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                        <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                    </div>
+                    <!-- <p class="text-center my-1">BUY NOW</p> -->
+                </div>
+                <!-- <div class="overlay">
+                    <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                    <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                    <a href="#" style="--i:3;" class="fas fa-search"></a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+   
+    <section class="deal" id="deal">
+        <div class="deal-cont">
+            <h2>Latest Laptops</h2>
+            <h6>
+                Upto 25% Off on First Purchase
+            </h6>
+        </div>
+        <div class="deal-cont2">
+            <h2>New Headphones</h2>
+            <h6>
+                Upto 50% Off on First Purchase
+            </h6>
+        </div>
+    </section>
+    <div class="foot1">
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">ABOUT</div><a href="#" class="_1arVWX">Contact Us</a><a href="#" class="_1arVWX">About
+                Us</a><a href="#" class="_1arVWX">Careers</a><a href="#" class="_1arVWX">Eshop Stories</a><a href="#"
+                class="_1arVWX">Press</a><a href="#" target="_blank" class="_1arVWX" rel="noopener noreferrer">Eshop
+                Wholesale</a><a href="#" class="_1arVWX">Corporate Information</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">HELP</div><a href="#" class="_1arVWX">Payments</a><a href="#"
+                class="_1arVWX">Shipping</a><a href="#" class="_1arVWX">Cancellation
+                &amp; Returns</a><a href="#" class="_1arVWX">FAQ</a><a href="#" class="_1arVWX">Report Infringement</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">POLICY</div><a href="#" class="_1arVWX">Return Policy</a><a href="#"
+                class="_1arVWX">Terms Of Use</a><a href="#" class="_1arVWX">Security</a><a href="#"
+                class="_1arVWX">Privacy</a><a href="#s" class="_1arVWX">Sitemap</a><a href="#" class="_1arVWX">EPR
+                Compliance</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">SOCIAL</div><a href="#" class="_1arVWX">Facebook</a><a href="#"
+                class="_1arVWX">Twitter</a><a href="#" class="_1arVWX">YouTube</a>
+        </div>
+    </div>
+    <div>
+        <hr>
+        <footer>
+
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"><a
+                    href="https://seller.flipkart.com/?utm_source=fkwebsite&amp;utm_medium=websitedirect"><span
+                        class="hDTmm5">Become a Seller</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a
+                    href="https://brands.flipkart.com"><span class="hDTmm5">Advertise</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="><a
+                    href="/the-gift-card-store?otracker=undefined_footer_footer_navlinks"><span class="hDTmm5">Gift
+                        Cards</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a
+                    href="/helpcentre?otracker=undefined_footer_footer_navlinks"><span class="hDTmm5">Help
+                        Center</span></a></div><span class="z3ht-w">©2022
+                <span>Eshop.com</span></span>
+            <!-- <img src="img/footer-payments.jpg" alt="img">
+            <img src="//static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg"> -->
+            <!--  -->
+        </footer>
+    </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="resp.js"></script>
+</body>
+</html>

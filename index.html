@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <title>Eshop-BUY your Choice </title>
+</head>
+
+<body>
+    <header class="header">
+        <div class="user">
+            <i class="fa-solid fa-circle-user"></i>
+            <!-- <span>Guest</span> -->
+        </div>
+        <div class="login">
+            <button class="login-btn" id="login-btn"> Login</button>
+            
+        </div>
+        <div class="popup">
+            <div class="popup-content">
+                <div class="close" >
+                    <img src="img/close.png" alt="close" >
+                </div>
+                <div class="r-p-c">
+                    <h1>Login</h1>
+                    <p>Get access to your <br> orders, wishlist and <br>Recomendations</p>
+                    <div class="vectr">
+                        <img src="img/pic.png" alt="">
+                    </div>
+                </div>
+                <div class="l-p-c">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <form>
+                        <div class="user-box">
+                          <input type="text" name="" required="">
+                          
+                          <label>Email/Mobile </label>
+                        </div>
+                        <div class="user-box">
+                          <input type="password" name="" required="">
+                          <label>Password</label>
+                        </div>
+                        <input class="sbmt" type="submit" value="Login">
+                        <div class="sA">
+                            <div class="or">OR</div>
+                            <button class="otp">Request OTP</button>
+                        </div>
+                       
+
+                      </form>
+                </div>
+            </div>
+        </div>
+        <nav class="navbars background h-nav-resp">
+            <div class="links ">
+                <ul class="navList v-class-resp">
+                    <li class="navlink active"><a  href="http://" target="_blank"
+                            rel="noopener noreferrer">Home</a> </li>
+                    <li class="navlink"><a href="#offers"> Top Offers</a></li>
+                    <li class="navlink"><a href="about.html" target="_blank" rel="noopener noreferrer">About</a> </li>
+                    <li class="navlink"><a href="feedback.html" target="_blank" rel="noopener noreferrer">Contact Us</a>
+                    </li>
+                    <!-- <li class="navlink"><a href="http://" target="_blank" rel="noopener noreferrer">Login/SignUp</a> </li> -->
+                </ul>
+            </div>
+            <div class="burger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </nav>
+        <div class="logo">
+            <img src="img/main_logo.png" alt="">
+            <h1>Eshop</h1>
+        </div>
+        <div class="search">
+            <input type="text" name="" id="srch" placeholder="search for products, brands and more">
+            <div class="search-icon">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+    </header>
+    <div class="menu-cont">
+        <div class="menu-items">
+            <img src="img/m1.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="#offers"> Top Offers</a></p>
+
+            </div>
+        </div>
+        
+        <div class="menu-items">
+            <img src="img/m3.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="mobiles.html"> Mobiles</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m4.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="fashion.html"> Fashion</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m5.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="Electronics.html"> Electronics</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m6.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="home.html"> Home</a></p>
+            </div>
+        </div>
+        <div class="menu-items">
+            <img src="img/m7.jpg" alt="">
+
+            <div class="item-line">
+                <p><a href="appliences.html"> appliences</a></p>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- <div class="containe">
+        <video src="img/Black Friday Sale Twitter Post - Made with PosterMyWall.mp4" width="1900px" height="200px"></video>
+    </div> -->
+    <!-- <div class="container">
+        <div class="slider">
+            <figure>
+                <img src="img/mobile.webp" alt="">
+                <img src="img/5thimg.jpg" alt="">
+                <img src="img/ac_poster.jpg" alt="">
+                <img src="img/mobile-poster.jpg" alt="">
+                <img src="img/4thimg.jpg" alt="">
+            </figure>
+        </div>
+    </div> -->
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+        </div>
+
+        <div class="carousel-inner">
+            <div class="carousel-item active ">
+                <img src="img/cr1.jpg" class="d-block w-100 h-md-250" alt="..." height="400px">
+
+            </div>
+            <div class="carousel-item">
+                <img src="img/cr2.jpg" class="d-block w-100" alt="..." height="400px">
+                <!-- <video src="img/Black Friday Sale Twitter Post - Made with PosterMyWall.mp4" height="400px"></video> -->
+
+            </div>
+            <div class="carousel-item">
+                <img src="img/cr3.jpg" class="d-block w-100" alt="..." height="400px">
+
+            </div>
+            <div class="carousel-item">
+                <img src="img/cr4.jpg" class="d-block w-100" alt="..." height="400px">
+
+            </div>
+            <!-- <div class="carousel-item">
+                <img src="images/slider 5.PNG" class="d-block w-100" alt="..." height="400px">
+                
+            </div> -->
+        </div>
+        <button class="carousel-control-prev btn-dark " type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next btn-dark" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon " aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- <div class="crsl">
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="img/c1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/c2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="img/c2.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+</div> -->
+    <section class="sec1">
+        <img src="img/Red Black Friday Facebook Shared Image - Made with PosterMyWall.jpg" width="100%" height="210px"
+            alt="">
+    </section>
+    <div class="s1">
+        <div color="greyT5Subdued"
+            class="Card__BaseCard-b3n78k-0 fIFMRZ VideoBannerstyled__TextContainer-sc-4vltlv-2 buZjRM VideoBannerstyled__TextContainer-sc-4vltlv-2 s1-a">
+            <div class="VideoBannerstyled__BigTextWrap-sc-4vltlv-3 btugwM"><span
+                    class="VideoBannerstyled__TextUnderline-sc-4vltlv-4 cELyvj">Low</span>est Prices <br>Best Quality
+                Shopp<span class="VideoBannerstyled__TextUnderline1-sc-4vltlv-5 bSASEL">ing</span></div>
+            <div class="Card__BaseCard-b3n78k-0 fZGeRC VideoBannerstyled__BannerWrapper-sc-4vltlv-7 cFiEmA VideoBannerstyled__BannerWrapper-sc-4vltlv-7 cFiEmA"
+                color="white">
+                <div class="Card__BaseCard-b3n78k-0 fMgKVP VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt"
+                    color="white"><img
+                        src="https://static-assets.meesho.com/_next/static/images/freeDelivery-d9846832e8d6cbd506f5eba06741afac.svg"
+                        class="VideoBannerstyled__StyledImg-sc-4vltlv-9 ctXweB"><span font-size="12px"
+                        font-weight="demi" color="greyBase"
+                        class="Text__StyledText-oo0kvp-0 iUJPwt VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL">Free
+                        Delivery</span></div>
+                <div class="Card__BaseCard-b3n78k-0 fMgKVP VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt"
+                    color="white"><img
+                        src="https://static-assets.meesho.com/_next/static/images/cod-4c04d0a3d03c47e7904a1e8b47db7324.svg"
+                        class="VideoBannerstyled__StyledImg-sc-4vltlv-9 ctXweB"><span font-size="12px"
+                        font-weight="demi" color="greyBase"
+                        class="Text__StyledText-oo0kvp-0 iUJPwt VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL">Cash
+                        on Delivery</span></div>
+                <div class="Card__BaseCard-b3n78k-0 fMgKVP VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt VideoBannerstyled__BnrText-sc-4vltlv-8 kNSJmt"
+                    color="white"><img
+                        src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkiIGhlaWdodD0iMjEiIHZpZXdCb3g9IjAgMCAxOSAyMSIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMuNTI0NjQgNC41SDEzLjcyNDZDMTQuOTI0NiA0LjUgMTUuODk5NiA1LjQgMTUuOTc0NiA2LjZMMTYuNTc0NiAxOS4xMjVDMTYuNjQ5NiAyMC41NSAxNS41MjQ2IDIxLjY3NSAxNC4wOTk2IDIxLjY3NUgzLjIyNDY0QzEuNzk5NjQgMjEuNjc1IDAuNjc0NjM3IDIwLjQ3NSAwLjc0OTYzNyAxOS4xMjVMMS4yNzQ2NCA2LjZDMS4zNDk2NCA1LjQ3NSAyLjMyNDY0IDQuNSAzLjUyNDY0IDQuNVoiIGZpbGw9IndoaXRlIi8+CjxwYXRoIGQ9Ik0xNS4zNzM0IDcuMTk5NDZDMTUuNDQ4NCA2LjM3NDQ2IDE1LjQ0ODQgNi44MjQ0NiAxNS40NDg0IDUuOTk5NDZDMTUuNDQ4NCA1Ljk5OTQ2IDE1Ljc0ODQgNy43MjQ0NiAxNS43NDg0IDYuMjk5NDZDMTUuNzQ4NCA0LjU3NDQ2IDE1LjgyMzQgNi41OTk0NiAxNS44MjM0IDYuODI0NDZDMTUuODIzNCA3LjI3NDQ2IDE1LjgyMzQgNi4zNzQ0NiAxNS44MjM0IDYuODI0NDZDMTUuODk4NCA3LjI3NDQ2IDE1Ljg5ODQgNy43MjQ0NiAxNS45NzM0IDguMTc0NDZDMTYuMDQ4NCA5Ljc0OTQ2IDE2LjEyMzQgMTEuMzk5NSAxNi4xOTg0IDEyLjk3NDVDMTYuMzQ4NCAxNS42NzQ1IDE2LjM0ODQgMTYuNDk5NSAxNi40OTg0IDE5LjE5OTVDMTYuNDk4NCAxOS4yNzQ1IDE2LjI3MzQgMjAuNzc0NSAxNS43NDg0IDIxLjE0OTVDMTUuNDQ4NCAyMS4yOTk1IDE0LjM5ODQgMjEuODI0NSAxNC4wOTg0IDIxLjgyNDVMMi43NzM0NCAyMS40NDk1QzEuNDIzNDQgMjEuNDQ5NSAxLjQyMzQ0IDE5LjU3NDUgMC44OTg0MzggMTkuNDk5NUMzLjE0ODQ0IDE5Ljc5OTUgNS4zOTg0NCAxOS44NzQ1IDcuNjQ4NDQgMTkuODc0NUM4LjM5ODQ0IDE5Ljg3NDUgOS4xNDg0NCAxOS44NzQ1IDkuODk4NDQgMTkuNzk5NUMxMC44NzM0IDE5LjcyNDUgMTEuNjk4NCAxOS40OTk1IDEyLjUyMzQgMTguOTc0NUMxMy40MjM0IDE4LjI5OTUgMTQuMDk4NCAxNy4zOTk1IDE0LjQ3MzQgMTYuMzQ5NUMxNC44NDg0IDE1LjI5OTUgMTQuOTk4NCAxNC4wOTk1IDE1LjE0ODQgMTIuOTc0NUMxNS4xNDg0IDExLjAyNDUgMTUuMjk4NCA5LjE0OTQ2IDE1LjM3MzQgNy4xOTk0NloiIGZpbGw9IiNFN0VFRkYiLz4KPHBhdGggZD0iTTEzLjY0OTYgNS4xNzVDMTQuNDc0NiA1LjE3NSAxNS4xNDk2IDUuODUgMTUuMTQ5NiA2LjY3NUwxNS43NDk2IDE5LjJDMTUuNzQ5NiAxOS43MjUgMTUuNTk5NiAyMC4xNzUgMTUuMjI0NiAyMC40NzVDMTQuODQ5NiAyMC43NzUgMTQuMzk5NiAyMSAxMy45NDk2IDIxSDMuMjI0NjRDMi42OTk2NCAyMSAyLjI0OTY0IDIwLjc3NSAxLjk0OTY0IDIwLjQ3NUMxLjU3NDY0IDIwLjEgMS40MjQ2NCAxOS42NSAxLjQyNDY0IDE5LjJMMS45NDk2NCA2LjY3NUMxLjk0OTY0IDUuODUgMi42MjQ2NCA1LjE3NSAzLjQ0OTY0IDUuMTc1SDEzLjY0OTZaTTEzLjY0OTYgNC41SDMuNTI0NjRDMi4zMjQ2NCA0LjUgMS4zNDk2NCA1LjQ3NSAxLjI3NDY0IDYuNkwwLjc0OTYzNyAxOS4yQzAuNjc0NjM3IDIwLjU1IDEuNzk5NjQgMjEuNzUgMy4yMjQ2NCAyMS43NUgxNC4wMjQ2QzE1LjQ0OTYgMjEuNzUgMTYuNTc0NiAyMC41NSAxNi40OTk2IDE5LjJMMTUuODk5NiA2LjY3NUMxNS44MjQ2IDUuNDc1IDE0Ljg0OTYgNC41IDEzLjY0OTYgNC41WiIgZmlsbD0iIzMzMzMzMyIvPgo8cGF0aCBkPSJNNS4zOTk2MSA3LjcyNUM1Ljc3NDYxIDcuNzI1IDYuMDc0NjEgNy40MjUgNi4wNzQ2MSA3LjA1QzYuMDc0NjEgNi42NzUgNS43NzQ2MSA2LjM3NSA1LjM5OTYxIDYuMzc1QzUuMDI0NjEgNi4zNzUgNC43MjQ2MSA2LjY3NSA0LjcyNDYxIDcuMDVDNC43MjQ2MSA3LjQyNSA1LjAyNDYxIDcuNzI1IDUuMzk5NjEgNy43MjVaIiBmaWxsPSIjRDJFOUZGIi8+CjxwYXRoIGQ9Ik0xMS43NzQ2IDcuNjQ4ODNDMTIuMTQ5NiA3LjY0ODgzIDEyLjQ0OTYgNy4zNDg4MyAxMi40NDk2IDYuOTczODNDMTIuNDQ5NiA2LjU5ODgzIDEyLjE0OTYgNi4yOTg4MyAxMS43NzQ2IDYuMjk4ODNDMTEuMzk5NiA2LjI5ODgzIDExLjA5OTYgNi41OTg4MyAxMS4wOTk2IDYuOTczODNDMTEuMDk5NiA3LjM0ODgzIDExLjM5OTYgNy42NDg4MyAxMS43NzQ2IDcuNjQ4ODNaIiBmaWxsPSIjRDJFOUZGIi8+CjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNOC42MjM0NCAxLjEyNUM3LjAzMDU0IDEuMTI1IDUuNzczNDQgMi4zODIxMSA1Ljc3MzQ0IDMuOTc1VjYuNzQ5ODFMNS4wMjM0NCA2Ljc1TTUuMDIzNDQgNi43NVYzLjk3NUM1LjAyMzQ0IDEuOTY3ODkgNi42MTYzMyAwLjM3NSA4LjYyMzQ0IDAuMzc1QzEwLjYzMDUgMC4zNzUgMTIuMjIzNCAxLjk2Nzg5IDEyLjIyMzQgMy45NzVWNi43NUMxMi4yMjM0IDYuOTU3MTEgMTIuMDU1NSA3LjEyNSAxMS44NDg0IDcuMTI1QzExLjY0MTMgNy4xMjUgMTEuNDczNCA2Ljk1NzExIDExLjQ3MzQgNi43NVYzLjk3NUMxMS40NzM0IDIuMzgyMTEgMTAuMjE2MyAxLjEyNSA4LjYyMzQ0IDEuMTI1IiBmaWxsPSIjMzMzMzMzIi8+CjxwYXRoIGQ9Ik0xNC42MjQzIDE0Ljg0ODRDMTQuMTc0MyAxNC42MjM0IDEzLjY0OTMgMTQuNTQ4NCAxMy4wNDkzIDE0LjQ3MzRDMTIuNDQ5MyAxNC4zOTg0IDExLjI0OTMgMTQuMzk4NCAxMS4yNDkzIDE0LjM5ODRDMTAuNjQ5MyAxNC4zOTg0IDEwLjA0OTMgMTQuNDczNCA5LjM3NDI3IDE0LjQ3MzRDOS4yOTkyNyAxNC40NzM0IDkuMjk5MjcgMTQuNDczNCA5LjIyNDI3IDE0LjQ3MzRDOC4xNzQyNyAxNC41NDg0IDcuMjc0MjcgMTMuNzIzNCA3LjI3NDI3IDEyLjY3MzRDNy4xOTkyNyAxMS42MjM0IDguMDI0MjcgMTAuNzIzNCA4Ljk5OTI3IDEwLjY0ODRDOS4wNzQyNyAxMC42NDg0IDkuMTQ5MjcgMTAuNjQ4NCA5LjIyNDI3IDEwLjY0ODRDOS4yMjQyNyAxMC42NDg0IDkuNTI0MjcgMTAuNjQ4NCA5LjU5OTI3IDEwLjY0ODRDMTAuOTQ5MyAxMC43MjM0IDEyLjI5OTMgMTAuNzk4NCAxMy43MjQzIDExLjE3MzRMMTMuOTQ5MyAxMS4yNDg0QzE0LjY5OTMgMTEuNDczNCAxNS4zNzQzIDExLjY5ODQgMTYuMTI0MyAxMi4yMjM0QzIwLjg0OTMgMTUuNDQ4NCAxNS43NDkzIDIxLjIyMzQgMTUuNTI0MyAyMS4yOTg0QzE1Ljc0OTMgMjEuMTQ4NCAxNi45NDkzIDE4LjI5ODQgMTYuMTI0MyAxNi4yNzM0QzE2LjA0OTMgMTYuMDQ4NCAxNS45NzQzIDE1Ljg5ODQgMTUuODI0MyAxNS42NzM0SDE1Ljc0OTNMMTQuNjI0MyAxNC44NDg0Wk0xNC42MjQzIDE0Ljg0ODRDMTUuMDc0MyAxNS4wNzM0IDE1LjQ0OTMgMTUuMjk4NCAxNS43NDkzIDE1LjY3MzRMMTQuNjI0MyAxNC44NDg0WiIgZmlsbD0iI0Y0MzM5NyIgc3Ryb2tlPSIjRjQzMzk3IiBzdHJva2Utd2lkdGg9IjAuMjUxMSIvPgo8cGF0aCBkPSJNMTEuMDk2OSAxNi43MjUyQzExLjQ3MTkgMTYuOTUwMiAxMS45MjE5IDE2LjY1MDIgMTEuOTIxOSAxNi4yNzUyVjkuMDAwMTZDMTEuOTIxOSA4LjYyNTE2IDExLjQ3MTkgOC4zMjUxNiAxMS4wOTY5IDguNTUwMTZWMTYuNzI1MlpNMTEuMDk2OSAxNi43MjUyTDQuNzk2ODggMTMuMTI1MkM0LjQyMTg4IDEyLjkwMDIgNC40MjE4OCAxMi40NTAyIDQuNzk2ODggMTIuMjI1MkwxMS4wOTY5IDguNTUwMTZWMTYuNzI1MloiIGZpbGw9IiNGNDMzOTciIHN0cm9rZT0iI0Y0MzM5NyIgc3Ryb2tlLXdpZHRoPSIwLjI1MTEiLz4KPC9zdmc+Cg=="
+                        class="VideoBannerstyled__StyledImg-sc-4vltlv-9 ctXweB"><span font-size="12px"
+                        font-weight="demi" color="greyBase"
+                        class="Text__StyledText-oo0kvp-0 iUJPwt VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL VideoBannerstyled__StyledText-sc-4vltlv-10 bherWL">Easy
+                        Returns</span></div>
+            </div>
+            <div class="VideoBannerstyled__DownloadButton-sc-4vltlv-1 iNWZXt">
+                <picture>
+                    <source srcset="https://images.meesho.com/images/pow/playstore-small-icon.webp" type="image/webp"
+                        class="lazyload"><img src="https://images.meesho.com/images/pow/playstore-small-icon.png"
+                        width="100%" height="100%" class="lazyload " alt="playstore-icon">
+                </picture><span color="white" font-size="18px" font-weight="demi"
+                    class="Text__StyledText-oo0kvp-0 hgIwfR">Download the Eshop App</span>
+            </div>
+        </div>
+        <div class="VideoBannerstyled__VidPlayerContainer-sc-4vltlv-6 gifjed">
+            <picture>
+                <img src="img/2741840.jpg" width="100%" height="100%" class="lazyload "
+                    alt="how-to-earn-video-thumbnail">
+            </picture>
+        </div>
+    </div>
+    <div class="offers" id="offers">
+    <h1> Top Offers</h1>
+    </div>
+    <section class="deal">
+        <div class="deal-cont">
+            <h2>Latest Laptops</h2>
+            <h6>
+                Upto 25% Off on First Purchase
+            </h6>
+        </div>
+        <div class="deal-cont2">
+            <h2>New Headphones</h2>
+            <h6>
+                Upto 50% Off on First Purchase
+            </h6>
+        </div>
+    </section>
+    <div class="wrap" >
+        <div class="item">
+            <div class="image">
+                <img src="img/cricket_kit.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Cricket Kit</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 80% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/watch.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Black classic Watch</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 50% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w3.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Cricket plastic bat</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 40% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/m3.jpg" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Mobile</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 30% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w5.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Kettle and Bottle</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 70% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w6.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Tricycle</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 63% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w7.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Vacume Cleaner</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 40% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w8.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Washing Machine</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 25% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w9.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Belt and Purse</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 75% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+        <div class="item">
+            <div class="image">
+                <img src="img/w10.png" alt="">
+            </div>
+            <div class="lines">
+                <strong class="descrip">Tea+Ditergent</strong>
+                <div class="sub-line">
+                    <p class=" discount">min 85% off</p>
+                    <div class="stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                <div class="item-btns">
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Add to Cart</button>
+                    <button class="atc"><i class="fa-solid fa-cart-arrow-down"></i> Buy Now</button>
+                </div>
+                <!-- <p class="text-center my-1">BUY NOW</p> -->
+            </div>
+            <!-- <div class="overlay">
+                <a href="#" style="--i:1;" class="fas fa-heart"></a>
+                <a href="#" style="--i:2;" class="fas fa-shopping-cart"></a>
+                <a href="#" style="--i:3;" class="fas fa-search"></a>
+            </div> -->
+        </div>
+
+    </div>
+    
+    <div class="foot1">
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">ABOUT</div><a href="#" class="_1arVWX">Contact Us</a><a href="#" class="_1arVWX">About
+                Us</a><a href="#" class="_1arVWX">Careers</a><a href="#" class="_1arVWX">Eshop Stories</a><a href="#"
+                class="_1arVWX">Press</a><a href="#" target="_blank" class="_1arVWX" rel="noopener noreferrer">Eshop
+                Wholesale</a><a href="#" class="_1arVWX">Corporate Information</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">HELP</div><a href="#" class="_1arVWX">Payments</a><a href="#"
+                class="_1arVWX">Shipping</a><a href="#" class="_1arVWX">Cancellation
+                &amp; Returns</a><a href="#" class="_1arVWX">FAQ</a><a href="#" class="_1arVWX">Report Infringement</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">POLICY</div><a href="#" class="_1arVWX">Return Policy</a><a href="#"
+                class="_1arVWX">Terms Of Use</a><a href="#" class="_1arVWX">Security</a><a href="#"
+                class="_1arVWX">Privacy</a><a href="#s" class="_1arVWX">Sitemap</a><a href="#" class="_1arVWX">EPR
+                Compliance</a>
+        </div>
+        <div class="_2Brcj4">
+            <div class="_3-dnWo">SOCIAL</div><a href="#" class="_1arVWX">Facebook</a><a href="#"
+                class="_1arVWX">Twitter</a><a href="#" class="_1arVWX">YouTube</a>
+        </div>
+        <!-- <div class="_2Brcj4 address">
+            <div class="_3JHi0r">
+                <div class="_3-dnWo"><span>Mail Us:</span></div>
+                <div class="_1U1qnR">
+                    <div class="_1LJS6T">
+                        <div class="_2NKhZn _1U1qnR">
+                            <p>Eshop Internet Private Limited, </p>
+                            <p> Buildings Alyssa, Begonia &amp; </p>
+                            <p> Clove Embassy Tech Village, </p>
+                            <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                            <p> Bengaluru, 560103, </p>
+                            <p> Karnataka, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+        <!-- <div class="_2Brcj4 address">
+            <div class="_3IT4e6">
+                <div class="_3-dnWo"><span>Registered Office Address:</span></div>
+                <div class="_1U1qnR">
+                    <div class="_1LJS6T">
+                        <div class="_2NKhZn _1U1qnR">
+                            <p>Eshop Internet Private Limited, </p>
+                            <p> Buildings Alyssa, Begonia &amp; </p>
+                            <p> Clove Embassy Tech Village, </p>
+                            <p> Outer Ring Road, Devarabeesanahalli Village, </p>
+                            <p> Bengaluru, 560103, </p>
+                            <p> Karnataka, India </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+    </div>
+    <div>
+        <hr>
+        <footer>
+
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNiIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE2IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTJoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTUuOTMgNS42MTRoLTIuOTQ4VjQuMTRjMC0uODE4LS42NTUtMS40NzMtMS40NzMtMS40NzNIOC41NmMtLjgxNyAwLTEuNDczLjY1NS0xLjQ3MyAxLjQ3M3YxLjQ3NEg0LjE0Yy0uODE4IDAtMS40NjYuNjU2LTEuNDY2IDEuNDc0bC0uMDA3IDguMTA1YzAgLjgxOC42NTUgMS40NzQgMS40NzMgMS40NzRoMTEuNzljLjgxOCAwIDEuNDc0LS42NTYgMS40NzQtMS40NzRWNy4wODhjMC0uODE4LS42NTYtMS40NzQtMS40NzQtMS40NzR6bS00LjQyMSAwSDguNTZWNC4xNGgyLjk0OHYxLjQ3NHoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yIC0yKSIvPgogICAgPC9nPgo8L3N2Zz4K"><a
+                    href="https://seller.flipkart.com/?utm_source=fkwebsite&amp;utm_medium=websitedirect"><span
+                        class="hDTmm5">Become a Seller</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0zLTNoMjB2MjBILTN6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTAuNDkyIDNDNi4zNTMgMyAzIDYuMzYgMyAxMC41YzAgNC4xNCAzLjM1MyA3LjUgNy40OTIgNy41QzE0LjY0IDE4IDE4IDE0LjY0IDE4IDEwLjUgMTggNi4zNiAxNC42NCAzIDEwLjQ5MiAzem0zLjE4IDEyTDEwLjUgMTMuMDg4IDcuMzI3IDE1bC44NC0zLjYwN0w1LjM3IDguOTdsMy42OS0uMzE1TDEwLjUgNS4yNWwxLjQ0IDMuMzk4IDMuNjkuMzE1LTIuNzk4IDIuNDIyLjg0IDMuNjE1eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTMgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a
+                    href="https://brands.flipkart.com"><span class="hDTmm5">Advertise</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxOCIgaGVpZ2h0PSIxNyIgdmlld0JveD0iMCAwIDE4IDE3Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0xLTFoMjB2MjBILTF6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNMTYuNjY3IDVIMTQuODVjLjA5Mi0uMjU4LjE1LS41NDIuMTUtLjgzM2EyLjQ5NyAyLjQ5NyAwIDAgMC00LjU4My0xLjM3NUwxMCAzLjM1bC0uNDE3LS41NjdBMi41MSAyLjUxIDAgMCAwIDcuNSAxLjY2N2EyLjQ5NyAyLjQ5NyAwIDAgMC0yLjUgMi41YzAgLjI5MS4wNTguNTc1LjE1LjgzM0gzLjMzM2MtLjkyNSAwLTEuNjU4Ljc0Mi0xLjY1OCAxLjY2N2wtLjAwOCA5LjE2NkExLjY2IDEuNjYgMCAwIDAgMy4zMzMgMTcuNWgxMy4zMzRhMS42NiAxLjY2IDAgMCAwIDEuNjY2LTEuNjY3VjYuNjY3QTEuNjYgMS42NiAwIDAgMCAxNi42NjcgNXptMCA2LjY2N0gzLjMzM3YtNWg0LjIzNEw1LjgzMyA5LjAyNWwxLjM1Ljk3NSAxLjk4NC0yLjdMMTAgNi4xNjdsLjgzMyAxLjEzMyAxLjk4NCAyLjcgMS4zNS0uOTc1LTEuNzM0LTIuMzU4aDQuMjM0djV6IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMSAtMSkiLz4KICAgIDwvZz4KPC9zdmc+Cg=="><a
+                    href="/the-gift-card-store?otracker=undefined_footer_footer_navlinks"><span class="hDTmm5">Gift
+                        Cards</span></a></div>
+            <div><img
+                    src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxNSIgaGVpZ2h0PSIxNSIgdmlld0JveD0iMCAwIDE1IDE1Ij4KICAgIDxkZWZzPgogICAgICAgIDxsaW5lYXJHcmFkaWVudCBpZD0iYSIgeDE9IjAlIiB4Mj0iODYuODc2JSIgeTE9IjAlIiB5Mj0iODAuMjAyJSI+CiAgICAgICAgICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNGRkQ4MDAiLz4KICAgICAgICAgICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjRkZBRjAwIi8+CiAgICAgICAgPC9saW5lYXJHcmFkaWVudD4KICAgIDwvZGVmcz4KICAgIDxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0iZXZlbm9kZCI+CiAgICAgICAgPHBhdGggZD0iTS0yLTNoMjB2MjBILTJ6Ii8+CiAgICAgICAgPHBhdGggZmlsbD0idXJsKCNhKSIgZmlsbC1ydWxlPSJub256ZXJvIiBkPSJNOS41IDNDNS4zNiAzIDIgNi4zNiAyIDEwLjUgMiAxNC42NCA1LjM2IDE4IDkuNSAxOGM0LjE0IDAgNy41LTMuMzYgNy41LTcuNUMxNyA2LjM2IDEzLjY0IDMgOS41IDN6bS43NSAxMi43NWgtMS41di0xLjVoMS41djEuNXptMS41NTMtNS44MTNsLS42NzYuNjljLS41NC41NDgtLjg3Ny45OTgtLjg3NyAyLjEyM2gtMS41di0uMzc1YzAtLjgyNS4zMzgtMS41NzUuODc3LTIuMTIzbC45My0uOTQ1Yy4yNzgtLjI3LjQ0My0uNjQ1LjQ0My0xLjA1NyAwLS44MjUtLjY3NS0xLjUtMS41LTEuNVM4IDcuNDI1IDggOC4yNUg2LjVhMyAzIDAgMSAxIDYgMGMwIC42Ni0uMjcgMS4yNi0uNjk3IDEuNjg4eiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTIgLTMpIi8+CiAgICA8L2c+Cjwvc3ZnPgo="><a
+                    href="/helpcentre?otracker=undefined_footer_footer_navlinks"><span class="hDTmm5">Help
+                        Center</span></a></div><span class="z3ht-w">©2022
+                <span>Eshop.com</span></span>
+            <!-- <img src="img/footer-payments.jpg" alt="img">
+            <img src="//static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg"> -->
+            <!--  -->
+        </footer>
+    </div>
+    </div>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="resp.js"></script>
+
+
+</body>
+
+</html>
